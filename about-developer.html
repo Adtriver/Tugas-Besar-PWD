@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Developer - Sistem Informasi UNTAN</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1e3a8a',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        .animate-fade-in-delay {
+            animation: fadeIn 1s ease-out 0.3s both;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <!-- Navbar -->
+    <nav class="bg-navy text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">
+                    <span class="text-gold">SI</span> UNTAN
+                </div>
+                <a href="index.html" class="bg-gold text-navy px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition">
+                    ← Kembali ke Beranda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-navy via-blue-900 to-navy py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="animate-fade-in">
+                <div class="w-40 h-40 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center text-7xl shadow-2xl">
+                    👨‍💻
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Iqlima Nur'ain</h1>
+                <p class="text-gold text-xl mb-2">H1101241007</p>
+                <p class="text-white text-lg">Sistem Informasi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8 animate-fade-in-delay">
+                <h2 class="text-3xl font-bold text-navy mb-6 text-center">Tentang Saya</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Halo! Saya adalah mahasiswa Sistem Informasi di Universitas Tanjungpura yang memiliki passion dalam pengembangan web dan teknologi informasi. Website ini dibuat sebagai bagian dari tugas mata kuliah Pemrograman Web Dasar.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Melalui proyek ini, saya belajar mengimplementasikan berbagai konsep pemrograman web seperti HTML5, CSS3, JavaScript, dan framework Tailwind CSS. Saya berharap website ini dapat memberikan informasi yang bermanfaat tentang Jurusan Sistem Informasi UNTAN.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Saya terus belajar dan mengembangkan skill di bidang web development, dengan fokus pada pembuatan website yang responsive, interaktif, dan user-friendly.
+                </p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8 animate-fade-in-delay">
+                <h2 class="text-2xl font-bold text-navy mb-6 text-center">Skills & Technologies</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <div>
+                            <h3 class="font-bold text-navy">HTML5</h3>
+                            <p class="text-sm text-gray-600">Semantic markup & structure</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <div>
+                            <h3 class="font-bold text-navy">CSS3 & Tailwind</h3>
+                            <p class="text-sm text-gray-600">Responsive design & styling</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <div>
+                            <h3 class="font-bold text-navy">JavaScript</h3>
+                            <p class="text-sm text-gray-600">Interactive features & DOM manipulation</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <div>
+                            <h3 class="font-bold text-navy">Responsive Design</h3>
+                            <p class="text-sm text-gray-600">Mobile-first approach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="bg-white rounded-lg shadow-lg p-8 animate-fade-in-delay">
+                <h2 class="text-2xl font-bold text-navy mb-6 text-center">Kontak Saya</h2>
+                <div class="space-y-4 max-w-md mx-auto">
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div>
+                            <h3 class="font-semibold text-navy">Email</h3>
+                            <a href="mailto:h1101241007@student.untan.ac.id" class="text-gold hover:underline">h1101241007@student.untan.ac.id</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div>
+                            <h3 class="font-semibold text-navy">Nomor Telepon</h3>
+                            <a href="tel:+6285349909096" class="text-gold hover:underline">+62 853-4990-9096</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div>
+                            <h3 class="font-semibold text-navy">GitHub</h3>
+                            <a href="https://github.com/Adtriver" target="_blank" class="text-gold hover:underline">github.com/Adtriver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Info -->
+            <div class="bg-navy text-white rounded-lg shadow-lg p-8 mt-8 animate-fade-in-delay">
+                <h2 class="text-2xl font-bold mb-6 text-center">Informasi Proyek</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <h3 class="font-semibold mb-1">Tanggal Pembuatan</h3>
+                        <p class="text-gold">18 November 2025</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-1">Tools</h3>
+                        <p class="text-gold">HTML, CSS, JavaScript, Tailwind</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-1">Tujuan</h3>
+                        <p class="text-gold">Tugas Besar Pemrograman Web Dasar</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-sm text-gray-300">
+                        Website ini dibuat dengan sepenuh hati sebagai bagian dari pembelajaran di Jurusan Sistem Informasi, Universitas Tanjungpura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Sistem Informasi - Universitas Tanjungpura</p>
+            <p class="text-sm text-gray-400 mt-2">Dibuat untuk pembelajaran</p>
+        </div>
+    </footer>
+
+</body>
+</html>
